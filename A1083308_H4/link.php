@@ -54,5 +54,7 @@ while ($row=mysqli_fetch_row($result)) {
 	}
 	echo "</tr>";
 }
+echo "</table>";
+echo "</center>";
 ?>
 </body>
