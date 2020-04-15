@@ -22,9 +22,9 @@ body{
 <?php
 
 $link=mysqli_connect(
-					 '127.0.0.1:3308',
+					 'localhost',
 					 'root',
-					 'a1083308',
+					 'password',
 					 'php2020'
 					);
 $SQL="SELECT * FROM employee";
