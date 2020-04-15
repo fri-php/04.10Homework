@@ -1,27 +1,20 @@
 <?php
-$link=mysqli_connect('localhost','root','20001005','php2020');
+$link=mysqli_connect('localhost','root','password','php2020');
 
-if (mysqli_select_db($link,'php2020')) {
-	echo "correct";
-}
-
-else echo "fail";
-
-echo "<br>";
 
 $SQL="SELECT*FROM employee";
 $result=mysqli_query($link,$SQL);
 echo "<center>";
 echo "<table style='border:4px #CA82FF solid;' rules='all' cellpadding='10';>";
 echo "<tr>".
-	"<td>"."No"."</td>".
-	"<td>"."Fname"."</td>".
-	"<td>"."Minit"."</td>".
-	"<td>"."Lname"."</td>".
-	"<td>"."Bdate"."</td>".
-	"<td>"."Adress"."</td>".
-	"<td>"."Sex"."</td>".
-	"<td>"."Salary"."</td>".
+	"<th>"."No"."</th>".
+	"<th>"."Fname"."</th>".
+	"<th>"."Minit"."</th>".
+	"<th>"."Lname"."</th>".
+	"<th>"."Bdate"."</th>".
+	"<th>"."Adress"."</th>".
+	"<th>"."Sex"."</th>".
+	"<th>"."Salary"."</th>".
 	"</tr>";
 
 while ($row=mysqli_fetch_row($result)) {
