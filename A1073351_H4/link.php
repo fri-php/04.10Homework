@@ -6,7 +6,7 @@ $link=mysqli_connect('localhost','root','password','php2020');
 
 $SQL="SELECT * FROM employee";
 $result=mysqli_query($link,$SQL);//取值
-
+echo "<table style='border:3px #E6E6FA solid;' rules='all' cellpadding='10';>";
 echo "<tr><td>No</td>";
 echo "<td>Fname</td>";
 echo "<td>Minit</td>";
